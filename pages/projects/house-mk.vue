@@ -64,7 +64,7 @@
             ><ArrowL
           /></NuxtLink>
           <p>PROJECT</p>
-          <NuxtLink to="/projects/fanglang" class="arrow_right"
+          <NuxtLink to="/projects/fanglang_test" class="arrow_right"
             ><ArrowR
           /></NuxtLink>
         </div>

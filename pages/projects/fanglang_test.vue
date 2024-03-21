@@ -22,7 +22,7 @@
           <div class="list_item">
             <p class="heading">Project Name</p>
             <p class="content">
-              <span>FANGLANG</span> - Hutong Community Bar Renovation
+              <span>House MK</span> - Hutong House Renovation
             </p>
           </div>
           <div class="list_item">
@@ -35,39 +35,36 @@
           </div>
           <div class="list_item">
             <p class="heading">Client</p>
-            <p class="content"><span>FANGLANG</span></p>
+            <p class="content">Masaya Kawashima</p>
           </div>
           <div class="list_item">
             <p class="heading">Site Area</p>
-            <p class="content">25<span>㎡</span></p>
+            <p class="content">22<span>㎡</span></p>
           </div>
           <div class="list_item">
             <p class="heading">Gross Area</p>
-            <p class="content">25<span>㎡</span></p>
+            <p class="content">22<span>㎡</span></p>
           </div>
           <div class="list_item">
             <p class="heading">Design Period</p>
-            <p class="content">2022.7 - 2022.8</p>
+            <p class="content">2023.5 - 2023.7</p>
           </div>
           <div class="list_item">
             <p class="heading">Construction Period</p>
-            <p class="content">2022.8 - 2022.9</p>
+            <p class="content">2023.7 - 2023.9</p>
           </div>
           <div class="list_item" style="padding-bottom: 0">
             <p class="heading">Photography Credit</p>
-            <p class="content">Takahito Yagyuda</p>
+            <p class="content">Takahito Yagyuda, Masaya Kawashima</p>
           </div>
         </div>
         <hr />
         <div class="project_nav">
-          <NuxtLink to="/projects/house-mk" class="arrow_left"
+          <NuxtLink to="/projects/beyond-coffee" class="arrow_left"
             ><ArrowL
           /></NuxtLink>
           <p>PROJECT</p>
-          <NuxtLink
-            to="/projects/fanglang"
-            class="arrow_right"
-            style="opacity: 0.3"
+          <NuxtLink to="/projects/fanglang" class="arrow_right"
             ><ArrowR
           /></NuxtLink>
         </div>
@@ -97,6 +94,7 @@ export default {
     ArrowL,
     ArrowR,
   },
+
   transition: "fade",
 
   data() {
@@ -122,16 +120,15 @@ export default {
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_Plan_02.jpg" },
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_Plan_03.jpg" },
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_Plan_04.jpg" },
-        { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_20.jpg" },
-        { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_21.jpg" },
-        { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_22.jpg" },
+        { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_16.jpg" },
+        { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_17.jpg" },
+        { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_18.jpg" },
       ],
     };
   },
 
   mounted() {
     window.addEventListener("resize", this.handleResize);
-
     this.handleResize();
 
     const imageLoadPromises = this.images.map((image, index) => {
