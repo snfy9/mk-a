@@ -1,0 +1,218 @@
+/* zero */
+.project_container {
+  font-size: 0;
+}
+
+.project-page {
+  letter-spacing: 1em;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.5s ease, transform 1s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+p,
+a {
+  letter-spacing: 0.05em;
+  color: #333;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.location {
+  color: #666;
+}
+
+.image_container {
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+img {
+  width: 100%;
+}
+
+img.no-padding {
+  padding-bottom: 0;
+}
+
+.fade_in {
+  opacity: 1;
+}
+
+.list_item {
+  display: grid;
+}
+
+.heading {
+  text-transform: uppercase;
+}
+
+.content {
+  padding-left: 40px;
+}
+
+hr {
+  border: 0.5px solid #eee;
+  margin: 0;
+}
+
+.heading {
+  text-transform: uppercase;
+}
+
+.project_nav {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.project_nav p {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  padding: 0 16px;
+}
+
+/* L */
+@media (min-width: 1200px) {
+
+  p,
+  a {
+    font-size: 12px;
+  }
+
+  .content {
+    font-size: 13px;
+  }
+
+  .content span {
+    font-size: 12px;
+  }
+
+}
+
+/* M */
+@media (min-width: 768px) {
+
+  p,
+  a {
+    font-size: 12px;
+  }
+
+  .content {
+    font-size: 13px;
+  }
+
+  .content span {
+    font-size: 12px;
+  }
+
+  .contents_grid {
+    display: grid;
+    grid-template-columns: 33% 1fr;
+  }
+
+  .project_container {
+    padding-top: 360px;
+    margin-right: 80px;
+  }
+
+  .fade-in {
+    padding-bottom: 80px;
+  }
+
+  .title_container {
+    padding-bottom: 80px;
+  }
+
+  .caption {
+    font-size: 20px;
+    letter-spacing: 0.04em;
+  }
+
+  .location {
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    padding-top: 4px;
+  }
+
+  .image_container {
+    padding-bottom: 80px;
+  }
+
+  .no_padding {
+    padding-bottom: 0;
+  }
+
+  .project_info {
+    padding: 88px 0 24px 0;
+  }
+
+  .list_item {
+    grid-template-columns: 140px 1fr;
+
+  }
+}
+
+/* S */
+@media (max-width: 767px) {
+
+  p,
+  a {
+    font-size: 10px;
+  }
+
+  .contents_grid {
+    padding-top: 90px;
+    margin: 0 16px;
+  }
+
+  .fade-in {
+    padding-bottom: 16px;
+  }
+
+  .title_container {
+    padding-bottom: 80px;
+  }
+
+  .caption {
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    padding-bottom: 1px;
+  }
+
+  .location {
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    color: #666;
+  }
+
+  .image_container {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+
+  .no_padding {
+    padding-bottom: 0;
+  }
+
+  .project_info {
+    padding: 48px 0 24px 0;
+  }
+
+  .list_item {
+    grid-template-columns: 120px 1fr;
+    padding: 1px 0;
+  }
+
+  .emptySpace {
+    display: none;
+  }
+}
