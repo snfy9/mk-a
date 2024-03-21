@@ -101,9 +101,9 @@ export default {
     return {
       isDesktop: false,
       images: [
-        { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_01.jpg" },
-        { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_02.jpg" },
-        { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_03.jpg" },
+        { src: "/projects/beyond-coffee.jpg" },
+        { src: "/projects/house-mk.jpg" },
+        { src: "/projects/fanglang.jpg" },
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_04.jpg" },
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_05.jpg" },
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_06.jpg" },
