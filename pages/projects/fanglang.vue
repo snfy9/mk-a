@@ -108,7 +108,7 @@ export default {
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_03.jpg" },
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_04.jpg" },
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_05.jpg" },
-        { src: "/projects/fanglang/test6.jpg" },
+        { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_06.jpg" },
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_07.jpg" },
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_08.jpg" },
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_09.jpg" },
