@@ -124,7 +124,7 @@ export default {
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_Plan_04.jpg" },
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_16.jpg" },
         { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_17.jpg" },
-        { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_18.jpg" },
+        { src: "/projects/fanglang/FANGLANG_Hutong-Community-Bar_last.jpg" },
       ],
     };
   },
