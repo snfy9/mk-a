@@ -169,6 +169,3 @@ export default {
 };
 </script>
 
-<style scoped>
-@import "~/assets/css/projects-style.css";
-</style>
