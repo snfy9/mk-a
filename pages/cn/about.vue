@@ -4,7 +4,7 @@
       <div class="emptySpace"></div>
       <div class="about_container">
         <div class="image_container">
-          <img src="/masayakawashima.jpg" alt="Profile Image" />
+          <img src="/about.webp" alt="Profile Image" />
         </div>
         <div class="text_container">
           <div class="name-container">

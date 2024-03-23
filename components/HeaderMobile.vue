@@ -124,6 +124,9 @@ export default {
 </script>
 
 <style scoped>
+.header_container {
+  line-height: 1;
+}
 p,
 a {
   font-size: 12px;
@@ -213,7 +216,7 @@ ul {
 .contact_container_tel {
   display: grid;
   grid-template-columns: 25px 1fr;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 }
 .contact_container_mail {
   display: grid;

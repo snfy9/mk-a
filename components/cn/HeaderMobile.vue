@@ -132,7 +132,6 @@ export default {
 
 <style scoped>
 .header_container {
-  font-family: "futura-pt", "HarmonyOS Sans SC", sans-serif !important;
   line-height: 1;
 }
 p,
@@ -224,7 +223,7 @@ ul {
 .contact_container_tel {
   display: grid;
   grid-template-columns: 25px 1fr;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 }
 .contact_container_mail {
   display: grid;
