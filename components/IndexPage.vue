@@ -44,7 +44,7 @@ export default {
       items: [
         {
           id: 1,
-          src: "/projects/beyond-coffee.jpg",
+          src: "/projects/beyond-coffee.webp",
           order: 1,
           caption: "beyond coffee",
           location: "BEIJING, CHINA",
@@ -52,7 +52,7 @@ export default {
         },
         {
           id: 2,
-          src: "/projects/house-mk.jpg",
+          src: "/projects/house-mk.webp",
           order: 2,
           caption: "House MK - Hutong House Renovation",
           location: "BEIJING, CHINA",
@@ -60,7 +60,7 @@ export default {
         },
         {
           id: 3,
-          src: "/projects/fanglang.jpg",
+          src: "/projects/fanglang.webp",
           order: 3,
           caption: "FANGLANG - Hutong Community Bar Renovation",
           location: "BEIJING,CHINA",
