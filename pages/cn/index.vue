@@ -129,11 +129,12 @@ img {
     display: grid;
     grid-template-columns: 33% 1fr;
     padding-top: 120px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     gap: 26px;
     margin-right: 80px;
   }
@@ -185,7 +186,7 @@ img {
     margin: 0 16px;
   }
   .project-container {
-    padding-bottom: 32px;
+    padding-bottom: 28px;
   }
   .project-container:last-child {
     padding-bottom: 0;

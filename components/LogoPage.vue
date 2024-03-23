@@ -46,9 +46,10 @@ img {
   margin: 0 auto;
   text-align: center;
 }
+
 @media (max-width: 767px) {
   img {
-    width: 220px;
+    width: 210px;
   }
 }
 </style>
