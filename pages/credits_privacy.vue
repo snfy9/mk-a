@@ -9,12 +9,11 @@
           </div>
           <div>
             <p class="custom_padding">
-              All images on this website belong to mk-architects, owner of all
-              the copyrights. These images are presented for informative
-              purposes only and may not be used by a third party under any
-              circumstances.
+              All images on this website belong to mk-a, owner of all the
+              copyrights. These images are presented for informative purposes
+              only and may not be used by a third party under any circumstances.
             </p>
-            <p>mk-architects All Rights Reserved.</p>
+            <p>mk-a All Rights Reserved.</p>
           </div>
         </div>
         <div class="privacy">
@@ -23,8 +22,8 @@
           </div>
           <div>
             <p class="custom_padding">
-              mk-architects respects the privacy of visitors and operates this
-              website based on the following privacy policy:
+              mk-a respects the privacy of visitors and operates this website
+              based on the following privacy policy:
             </p>
             <p>1. Information Collection and Use</p>
             <p class="custom_padding">
@@ -35,8 +34,8 @@
             </p>
             <p>2. Sharing with Third Parties</p>
             <p class="custom_padding">
-              mk-architects does not share collected personal information with
-              third parties, except as required by law.
+              mk-a does not share collected personal information with third
+              parties, except as required by law.
             </p>
             <p>3. Use of Cookies</p>
             <p class="custom_padding">

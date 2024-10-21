@@ -115,7 +115,7 @@ export default {
   },
   data() {
     return {
-      svgPath: "/mk-architects.svg",
+      svgPath: "/mka-logo_2.svg",
       isMenuOpen: false,
     };
   },

@@ -3,7 +3,7 @@
     <div class="credits-link">
       <NuxtLink to="/credits_privacy">CREDITS / PRIVACY</NuxtLink>
     </div>
-    <div><p>mk-architects All Rights Reserved.</p></div>
+    <div><p>mk-a All Rights Reserved.</p></div>
   </footer>
 </template>
 

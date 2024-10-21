@@ -58,10 +58,7 @@
         </div>
         <hr />
         <div class="project_nav">
-          <NuxtLink
-            to="/projects/beyond-coffee"
-            class="arrow_left"
-            style="opacity: 0.3"
+          <NuxtLink to="/projects/booths" class="arrow_left"
             ><ArrowL
           /></NuxtLink>
           <p>PROJECT</p>

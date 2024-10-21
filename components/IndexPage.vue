@@ -1,25 +1,28 @@
 <template>
-  <div class="fade-in_page">
-    <div class="index-page">
-      <div class="contents-grid">
-        <div class="emptySpace"></div>
-        <div class="projects">
-          <div class="project-container" v-for="item in items" :key="item.id">
-            <NuxtLink :to="'/projects/' + item.projectName" class="project">
-              <img :src="item.src" alt="Image" />
-              <div class="text-container">
-                <p class="caption">{{ item.caption }}</p>
-                <p class="location">{{ item.location }}</p>
-              </div>
-            </NuxtLink>
+  <div class="">
+    <LogoPage ref="logoPage" />
+    <div class="fade-in_page" ref="fadeInPage">
+      <div class="index-page">
+        <div class="contents-grid">
+          <div class="emptySpace"></div>
+          <div class="projects">
+            <div class="project-container" v-for="item in items" :key="item.id">
+              <NuxtLink :to="'/projects/' + item.projectName" class="project">
+                <img :src="item.src" alt="Image" />
+                <div class="text-container">
+                  <p class="caption">{{ item.caption }}</p>
+                  <p class="location">{{ item.location }}</p>
+                </div>
+              </NuxtLink>
+            </div>
           </div>
+          <div class="emptySpace"></div>
+          <Footer />
         </div>
-        <div class="emptySpace"></div>
-        <Footer />
+        <HeaderDesktop v-if="isDesktop" />
+        <HeaderMobile v-else />
+        <Fixed v-if="isDesktop" />
       </div>
-      <HeaderDesktop v-if="isDesktop" />
-      <HeaderMobile v-else />
-      <Fixed v-if="isDesktop" />
     </div>
   </div>
 </template>
@@ -29,6 +32,7 @@ import HeaderDesktop from "@/components/HeaderDesktop.vue";
 import HeaderMobile from "@/components/HeaderMobile.vue";
 import Footer from "@/components/Footer.vue";
 import Fixed from "@/components/Fixed.vue";
+import LogoPage from "@/components/LogoPage.vue";
 
 export default {
   components: {
@@ -36,32 +40,53 @@ export default {
     HeaderMobile,
     Footer,
     Fixed,
+    LogoPage,
   },
-
+  head() {
+    return {
+      title: "mk-a 川島雅矢建筑环境设计室",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Founded in 2024, mk-a Architects was established in Beijing by Japanese architects Masaya Kawashima.", // ここに説明を入れる
+        },
+      ],
+    };
+  },
   data() {
     return {
       isDesktop: false,
       items: [
         {
           id: 1,
-          src: "/projects/beyond-coffee.webp",
+          src: "/projects/fanglang.webp",
           order: 1,
+          caption: "Booth’s Cake shop in Dongsi ",
+          location: "BEIJING,CHINA",
+          projectName: "booths",
+        },
+        {
+          id: 2,
+          src: "/projects/beyond-coffee.webp",
+          order: 2,
           caption: "beyond coffee",
           location: "BEIJING, CHINA",
           projectName: "beyond-coffee",
         },
         {
-          id: 2,
+          id: 3,
           src: "/projects/house-mk.webp",
-          order: 2,
+          order: 3,
           caption: "House MK - Hutong House Renovation",
           location: "BEIJING, CHINA",
           projectName: "house-mk",
         },
         {
-          id: 3,
+          id: 4,
           src: "/projects/fanglang.webp",
-          order: 3,
+          order: 4,
           caption: "FANGLANG - Hutong Community Bar Renovation",
           location: "BEIJING,CHINA",
           projectName: "fanglang",
@@ -72,12 +97,32 @@ export default {
 
   mounted() {
     this.handleResize();
-
     window.addEventListener("resize", this.handleResize);
 
-    setTimeout(() => {
-      this.$el.style.opacity = 1;
-    }, 800);
+    const hasVisitedBefore = sessionStorage.getItem("hasVisitedBefore");
+
+    if (!hasVisitedBefore) {
+      sessionStorage.setItem("hasVisitedBefore", "true");
+      // LogoPageのフェードアウトとメインコンテンツのフェードイン
+      setTimeout(() => {
+        if (this.$refs.logoPage) {
+          this.$refs.logoPage.$el.style.opacity = 0;
+        }
+        setTimeout(() => {
+          if (this.$refs.fadeInPage) {
+            this.$refs.fadeInPage.style.opacity = 1;
+          }
+        }, 4200); // LogoPageのフェードアウト後にフェードイン開始
+      }, 1000);
+    } else {
+      // セッションストレージに値がある場合は、LogoPageを非表示にし、メインコンテンツを即座に表示
+      if (this.$refs.logoPage) {
+        this.$refs.logoPage.$el.style.display = "none";
+      }
+      if (this.$refs.fadeInPage) {
+        this.$refs.fadeInPage.style.opacity = 1;
+      }
+    }
   },
 
   beforeDestroy() {
@@ -213,5 +258,10 @@ img {
   .emptySpace {
     display: none;
   }
+}
+
+/* LogoPageコンポーネントのトランジション */
+::v-deep .logo-page {
+  transition: opacity 4.2s ease;
 }
 </style>

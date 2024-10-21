@@ -4,7 +4,7 @@
       <div class="emptySpace"></div>
       <div class="project_container">
         <div class="title_container">
-          <p class="caption">FANGLANG - Hutong Community Bar Renovation</p>
+          <p class="caption">Booth’s Cake shop in Dongsi</p>
           <p class="location">BEIJING, CHINA</p>
         </div>
         <div class="project">
@@ -21,13 +21,11 @@
         <div class="project_info">
           <div class="list_item">
             <p class="heading">Project Name</p>
-            <p class="content">
-              <span>FANGLANG</span> - Hutong Community Bar Renovation
-            </p>
+            <p class="content">Booth’s Cake shop in Dongsi</p>
           </div>
           <div class="list_item">
             <p class="heading">Project Type</p>
-            <p class="content">Renovation Project</p>
+            <p class="content">Interior</p>
           </div>
           <div class="list_item">
             <p class="heading">Location</p>
@@ -35,23 +33,23 @@
           </div>
           <div class="list_item">
             <p class="heading">Client</p>
-            <p class="content"><span>FANGLANG</span></p>
+            <p class="content"><span>Booth’s</span></p>
           </div>
           <div class="list_item">
             <p class="heading">Site Area</p>
-            <p class="content">25<span>㎡</span></p>
+            <p class="content">68<span>㎡</span></p>
           </div>
           <div class="list_item">
             <p class="heading">Gross Area</p>
-            <p class="content">25<span>㎡</span></p>
+            <p class="content">68<span>㎡</span></p>
           </div>
           <div class="list_item">
             <p class="heading">Design Period</p>
-            <p class="content">2022.7 - 2022.8</p>
+            <p class="content">2024.3 - 2024.5</p>
           </div>
           <div class="list_item">
             <p class="heading">Construction Period</p>
-            <p class="content">2022.8 - 2022.9</p>
+            <p class="content">2024.5 - 2024.7</p>
           </div>
           <div class="list_item" style="padding-bottom: 0">
             <p class="heading">Photography Credit</p>
@@ -60,11 +58,14 @@
         </div>
         <hr />
         <div class="project_nav">
-          <NuxtLink to="/projects/house-mk" class="arrow_left"
+          <NuxtLink
+            to="/projects/booths"
+            class="arrow_left"
+            style="opacity: 0.3"
             ><ArrowL
           /></NuxtLink>
           <p>PROJECT</p>
-          <NuxtLink to="/projects/booths" class="arrow_right"
+          <NuxtLink to="/projects/beyond-coffee" class="arrow_right"
             ><ArrowR
           /></NuxtLink>
         </div>

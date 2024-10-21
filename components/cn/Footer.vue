@@ -3,7 +3,7 @@
     <div class="credits-link">
       <NuxtLink to="/cn/credits_privacy">版权声明 / 隐私政策</NuxtLink>
     </div>
-    <div><p>mk-architects All Rights Reserved.</p></div>
+    <div><p>mk-a All Rights Reserved.</p></div>
   </footer>
 </template>
 

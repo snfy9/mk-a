@@ -9,9 +9,9 @@
           </div>
           <div>
             <p class="custom_padding">
-              此网站上的所有图片均属于<span>mk-architects</span>，拥有所有版权。这些图片仅用于信息提供，不得在任何情况下由第三方使用。
+              此网站上的所有图片均属于<span>mk-a</span>，拥有所有版权。这些图片仅用于信息提供，不得在任何情况下由第三方使用。
             </p>
-            <p><span>mk-architects All Rights Reserved.</span></p>
+            <p><span>mk-a All Rights Reserved.</span></p>
           </div>
         </div>
         <div class="privacy">
@@ -20,8 +20,7 @@
           </div>
           <div>
             <p class="custom_padding">
-              <span>mk-architects</span
-              >尊重访客的隐私权，并根据以下隐私政策运营本网站
+              <span>mk-a</span>尊重访客的隐私权，并根据以下隐私政策运营本网站
             </p>
             <p><span>1.</span> 信息收集和使用</p>
             <p class="custom_padding">
@@ -29,8 +28,7 @@
             </p>
             <p><span>2.</span> 与第三方分享</p>
             <p class="custom_padding">
-              <span>mk-architects</span
-              >不会与第三方分享收集到的个人信息，除非法律要求。
+              <span>mk-a</span>不会与第三方分享收集到的个人信息，除非法律要求。
             </p>
             <p><span>3.</span> 使用<span>Cookies</span></p>
             <p class="custom_padding">

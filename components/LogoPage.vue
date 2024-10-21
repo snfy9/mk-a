@@ -8,7 +8,7 @@
 export default {
   data() {
     return {
-      svgPath: "/mk-architects.svg",
+      svgPath: "/mka-logo_1.svg",
     };
   },
 };
@@ -35,6 +35,10 @@ export default {
   perspective: 1000;
 }
 .mk-architects_logo {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   justify-content: center;

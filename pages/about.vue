@@ -37,7 +37,7 @@
             </div>
             <div class="list_item" style="padding-bottom: 0">
               <p class="year">2024 -</p>
-              <p>Established mk-architects</p>
+              <p>Established mk-a</p>
             </div>
           </div>
         </div>

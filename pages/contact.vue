@@ -4,8 +4,7 @@
       <div class="emptySpace"></div>
       <div class="contact">
         <div class="logo-container">
-          <div class="logo_en">mk-architects</div>
-          <div class="vertical-line"></div>
+          <div class="logo_en">mk-a&nbsp;</div>
           <div class="logo_cn">川岛雅矢建筑环境设计室</div>
         </div>
         <div class="fixed-grid">
