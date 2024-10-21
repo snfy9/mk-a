@@ -59,14 +59,14 @@ export default {
     return {
       isDesktop: false,
       items: [
-        {
-          id: 1,
-          src: "/projects/fanglang.webp",
-          order: 1,
-          caption: "Booth’s Cake shop in Dongsi ",
-          location: "BEIJING,CHINA",
-          projectName: "booths",
-        },
+        // {
+        //   id: 1,
+        //   src: "/projects/fanglang.webp",
+        //   order: 1,
+        //   caption: "Booth’s Cake shop in Dongsi ",
+        //   location: "BEIJING,CHINA",
+        //   projectName: "booths",
+        // },
         {
           id: 2,
           src: "/projects/beyond-coffee.webp",
