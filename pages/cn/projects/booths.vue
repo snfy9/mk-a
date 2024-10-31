@@ -5,7 +5,7 @@
       <div class="project_container">
         <div class="title_container">
           <p class="caption">Booth’s Cake shop in Dongsi</p>
-          <p class="location">BEIJING, CHINA</p>
+          <p class="location">北京，中国</p>
         </div>
         <div class="project">
           <img
@@ -20,52 +20,53 @@
         </div>
         <div class="project_info">
           <div class="list_item">
-            <p class="heading">Project Name</p>
-            <p class="content">Booth’s Cake shop in Dongsi</p>
+            <p class="heading">项目名称</p>
+            <p class="content">Booth’s <span>布司蛋糕</span></p>
           </div>
           <div class="list_item">
-            <p class="heading">Project Type</p>
-            <p class="content">Interior</p>
+            <p class="heading">项目类型</p>
+            <p class="content"><span>室内设计</span></p>
           </div>
           <div class="list_item">
-            <p class="heading">Location</p>
-            <p class="content"><span>BEIJING, CHINA</span></p>
+            <p class="heading">项目地点</p>
+            <p class="content"><span>北京，中国</span></p>
           </div>
           <div class="list_item">
-            <p class="heading">Client</p>
-            <p class="content"><span>Booth’s</span></p>
+            <p class="heading">客户</p>
+            <p class="content">Booth’s</p>
           </div>
           <div class="list_item">
-            <p class="heading">Site Area</p>
+            <p class="heading">用地面积</p>
             <p class="content">68<span>㎡</span></p>
           </div>
           <div class="list_item">
-            <p class="heading">Gross Area</p>
+            <p class="heading">建筑面积</p>
             <p class="content">68<span>㎡</span></p>
           </div>
           <div class="list_item">
-            <p class="heading">Design Period</p>
-            <p class="content">2024.3 - 2024.5</p>
+            <p class="heading">设计周期</p>
+            <p class="content">2024.03- 2024.05</p>
           </div>
           <div class="list_item">
-            <p class="heading">Construction Period</p>
-            <p class="content">2024.5 - 2024.7</p>
+            <p class="heading">施工周期</p>
+            <p class="content">2024.05 – 2024.07</p>
           </div>
           <div class="list_item" style="padding-bottom: 0">
-            <p class="heading">Photography Credit</p>
-            <p class="content">Takahito Yagyuda</p>
+            <p class="heading">摄影师</p>
+            <p class="content"><span>柳生田昂仁</span></p>
           </div>
         </div>
         <hr />
+
         <div class="project_nav">
           <NuxtLink
-            to="/projects/booths"
+            to="/cn/projects/booths"
             class="arrow_left"
             style="opacity: 0.3"
             ><ArrowL
           /></NuxtLink>
-          <p>PROJECT</p>
-          <NuxtLink to="/projects/beyond-coffee" class="arrow_right"
+          <p>项目</p>
+          <NuxtLink to="/cn/projects/beyond-coffee" class="arrow_right"
             ><ArrowR
           /></NuxtLink>
         </div>
@@ -80,9 +81,9 @@
 </template>
 
 <script>
-import HeaderDesktop from "@/components/HeaderDesktop.vue";
-import HeaderMobile from "@/components/HeaderMobile.vue";
-import Footer from "@/components/Footer.vue";
+import HeaderDesktop from "@/components/cn/HeaderDesktop.vue";
+import HeaderMobile from "@/components/cn/HeaderMobile.vue";
+import Footer from "@/components/cn/Footer.vue";
 import Fixed from "@/components/Fixed.vue";
 import ArrowL from "@/components/Icon/arrowL.vue";
 import ArrowR from "@/components/Icon/arrowR.vue";
@@ -126,7 +127,6 @@ export default {
 
   mounted() {
     window.addEventListener("resize", this.handleResize);
-
     this.handleResize();
 
     const imageLoadPromises = this.images.map((image, index) => {
@@ -175,4 +175,37 @@ export default {
 
 <style scoped>
 @import "~/assets/css/projects-style.css";
+
+@media (min-width: 768px) {
+  .caption span {
+    font-size: 16px;
+    padding-left: 6px;
+  }
+  .list_item {
+    grid-template-columns: 48px 1fr;
+  }
+  span {
+    font-size: 12px;
+  }
+  .heading,
+  .content span,
+  .project_nav p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 767px) {
+  .caption {
+    padding-bottom: 2px;
+  }
+  span {
+    font-size: 9px;
+  }
+  .location {
+    font-size: 9px;
+  }
+  .list_item {
+    grid-template-columns: 48px 1fr;
+  }
+}
 </style>

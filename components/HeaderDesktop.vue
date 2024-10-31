@@ -3,8 +3,6 @@
     <div class="header">
       <div class="headerInner">
         <div class="logo">
-          <!-- <NuxtLink to="/" class="mk-architects">mk-architects</NuxtLink> -->
-          <!--[ height=30.5px]-->
           <NuxtLink to="/" class="mk-architects">
             <img
               :src="svgPath"

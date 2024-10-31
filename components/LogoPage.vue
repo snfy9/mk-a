@@ -45,7 +45,7 @@ export default {
   height: 100vh;
 }
 img {
-  width: 260px;
+  width: 300px;
   height: auto;
   margin: 0 auto;
   text-align: center;
