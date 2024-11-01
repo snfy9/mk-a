@@ -28,11 +28,21 @@ export default {
   99.9% {
     opacity: 0;
   }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 .fade-in-out_logo {
   animation: fade-in-out 4.2s ease-in-out;
+  animation-fill-mode: forwards;
   overflow: hidden;
   perspective: 1000;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 100;
 }
 .mk-architects_logo {
   position: fixed;
