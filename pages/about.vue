@@ -56,7 +56,13 @@ import HeaderDesktop from "@/components/HeaderDesktop.vue";
 import HeaderMobile from "@/components/HeaderMobile.vue";
 import Footer from "@/components/Footer.vue";
 import Fixed from "@/components/Fixed.vue";
+
 export default {
+              head() {
+    return {
+      title: "About | mk-a",
+    };
+  },
   components: {
     HeaderDesktop,
     HeaderMobile,

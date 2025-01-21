@@ -21,11 +21,11 @@ export default {
     ],
 
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.png',
+        href: '/favicon.svg',
       },
     ]
   },

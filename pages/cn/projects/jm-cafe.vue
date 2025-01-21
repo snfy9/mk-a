@@ -4,7 +4,7 @@
       <div class="emptySpace"></div>
       <div class="project_container">
         <div class="title_container">
-          <p class="caption">beyond coffee</p>
+          <p class="caption">JM Cafe+ in Dongsi</p>
           <p class="location">北京，中国</p>
         </div>
         <div class="project">
@@ -21,11 +21,11 @@
         <div class="project_info">
           <div class="list_item">
             <p class="heading">项目名称</p>
-            <p class="content">beyond coffee</p>
+            <p class="content">JM Cafe+ in Dongsi</p>
           </div>
           <div class="list_item">
             <p class="heading">项目类型</p>
-            <p class="content"><span>室内设计 &lpar;咖啡+酒吧&rpar;</span></p>
+            <p class="content"><span>室内设计</span></p>
           </div>
           <div class="list_item">
             <p class="heading">项目地点</p>
@@ -33,36 +33,39 @@
           </div>
           <div class="list_item">
             <p class="heading">客户</p>
-            <p class="content">beyond coffee</p>
+            <p class="content">JM Cafe</p>
           </div>
           <div class="list_item">
             <p class="heading">用地面积</p>
-            <p class="content">87<span>㎡</span></p>
+            <p class="content">60<span>㎡</span></p>
           </div>
           <div class="list_item">
             <p class="heading">建筑面积</p>
-            <p class="content">73<span>㎡</span></p>
+            <p class="content">110<span>㎡</span></p>
           </div>
           <div class="list_item">
             <p class="heading">设计周期</p>
-            <p class="content">2023.5 - 2023.7</p>
+            <p class="content">2024.9 - 2024.11</p>
           </div>
           <div class="list_item">
             <p class="heading">施工周期</p>
-            <p class="content">2023.7 - 2023.10</p>
+            <p class="content">2024.11 - 2025.1</p>
           </div>
           <div class="list_item" style="padding-bottom: 0">
             <p class="heading">摄影师</p>
-            <p class="content"><span>柳生田昂仁</span></p>
+            <p class="content"><span>张哲鹏</span></p>
           </div>
         </div>
         <hr />
         <div class="project_nav">
-          <NuxtLink to="/cn/projects/house-mk" class="arrow_left"
+          <NuxtLink to="/cn/projects/booths" class="arrow_left"
             ><ArrowL
           /></NuxtLink>
           <p>项目</p>
-          <NuxtLink to="/cn/projects/booths" class="arrow_right"
+          <NuxtLink
+            to="/cn/projects/jm-cafe"
+            class="arrow_right"
+            style="opacity: 0.3"
             ><ArrowR
           /></NuxtLink>
         </div>
@@ -87,7 +90,7 @@ import ArrowR from "@/components/Icon/arrowR.vue";
 export default {
   head() {
     return {
-      title: "beyond coffee | mk-a",
+      title: "JM Cafe+ in Dongsi | mk-a",
     };
   },
   components: {
@@ -98,31 +101,30 @@ export default {
     ArrowL,
     ArrowR,
   },
+
   transition: "fade",
 
   data() {
     return {
       isDesktop: false,
       images: [
-        { src: "/projects/beyond-coffee/beyond-coffee_01.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_02.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_03.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_04.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_05.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_06.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_07.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_08.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_09.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_10.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_11.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_12.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_13.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_14.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_15.webp" },
-        { src: "/projects/beyond-coffee/beyond-coffee_Plan_01.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_01.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_02.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_03.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_04.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_05.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_06.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_07.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_08.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_09.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_10.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_11.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_12.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_13.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_14.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_15.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_16.webp" },
       ],
-      imagesInView: {},
-      isImagesLoaded: false,
     };
   },
 
@@ -180,7 +182,7 @@ export default {
 @media (min-width: 768px) {
   .caption span {
     font-size: 16px;
-    padding-left: 6px;
+    padding-left: 4px;
   }
   .list_item {
     grid-template-columns: 48px 1fr;
@@ -200,7 +202,7 @@ export default {
     padding-bottom: 2px;
   }
   span {
-    font-size: 9px;
+    font-size: 11px;
   }
   .location {
     font-size: 9px;

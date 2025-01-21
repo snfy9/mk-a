@@ -51,7 +51,13 @@ import Fixed from "@/components/Fixed.vue";
 import Footer from "@/components/Footer.vue";
 import instagramIcon from "@/components/Icon/instagramIcon.vue";
 import weiboIcon from "@/components/Icon/weiboIcon.vue";
+
 export default {
+              head() {
+    return {
+      title: "Contact | mk-a",
+    };
+  },
   components: {
     HeaderDesktop,
     HeaderMobile,

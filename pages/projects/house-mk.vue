@@ -60,11 +60,11 @@
         </div>
         <hr />
         <div class="project_nav">
-          <NuxtLink to="/projects/beyond-coffee" class="arrow_left"
+          <NuxtLink to="/projects/fanglang" class="arrow_left"
             ><ArrowL
           /></NuxtLink>
           <p>PROJECT</p>
-          <NuxtLink to="/projects/fanglang" class="arrow_right"
+          <NuxtLink to="/projects/beyond-coffee" class="arrow_right"
             ><ArrowR
           /></NuxtLink>
         </div>
@@ -85,7 +85,13 @@ import Footer from "@/components/Footer.vue";
 import Fixed from "@/components/Fixed.vue";
 import ArrowL from "@/components/Icon/arrowL.vue";
 import ArrowR from "@/components/Icon/arrowR.vue";
+
 export default {
+    head() {
+    return {
+      title: "House MK | mk-a",
+    };
+  },
   components: {
     HeaderDesktop,
     HeaderMobile,

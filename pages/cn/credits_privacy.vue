@@ -52,7 +52,13 @@ import HeaderDesktop from "@/components/cn/HeaderDesktop.vue";
 import HeaderMobile from "@/components/cn/HeaderMobile.vue";
 import Footer from "@/components/cn/Footer.vue";
 import Fixed from "@/components/Fixed.vue";
+
 export default {
+            head() {
+    return {
+      title: "Credits and Privacy | mk-a",
+    };
+  },
   components: {
     HeaderDesktop,
     HeaderMobile,

@@ -58,14 +58,11 @@
         </div>
         <hr />
         <div class="project_nav">
-          <NuxtLink
-            to="/projects/booths"
-            class="arrow_left"
-            style="opacity: 0.3"
+          <NuxtLink to="/projects/beyond-coffee" class="arrow_left"
             ><ArrowL
           /></NuxtLink>
           <p>PROJECT</p>
-          <NuxtLink to="/projects/beyond-coffee" class="arrow_right"
+          <NuxtLink to="/projects/jm-cafe" class="arrow_right"
             ><ArrowR
           /></NuxtLink>
         </div>
@@ -86,7 +83,13 @@ import Footer from "@/components/Footer.vue";
 import Fixed from "@/components/Fixed.vue";
 import ArrowL from "@/components/Icon/arrowL.vue";
 import ArrowR from "@/components/Icon/arrowR.vue";
+
 export default {
+  head() {
+    return {
+      title: "Booth’s Cake shop in Dongsi | mk-a",
+    };
+  },
   components: {
     HeaderDesktop,
     HeaderMobile,

@@ -37,41 +37,63 @@ export default {
     Footer,
     Fixed,
   },
+
   transition: "fade",
 
+  head() {
+    return {
+      title: "mk-a 川島雅矢建筑环境设计室",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Founded in 2024, mk-a Architects was established in Beijing by Japanese architects Masaya Kawashima.", // ここに説明を入れる
+        },
+      ],
+    };
+  },
   data() {
     return {
       isDesktop: false,
       items: [
         {
-          id: 1,
-          src: "/projects/booths.webp",
+          id: 5,
+          src: "/projects/005-jm-cafe.webp",
           order: 1,
-          caption: "Booth’s Cake shop in Dongsi ",
+          caption: "JM Cafe+ in Dongsi",
+          location: "北京, 中国",
+          projectName: "jm-cafe",
+        },
+        {
+          id: 4,
+          src: "/projects/004-booths.webp",
+          order: 2,
+          caption: "Booth’s Cake shop in Dongsi",
           location: "北京, 中国",
           projectName: "booths",
         },
         {
-          id: 2,
-          src: "/projects/beyond-coffee.webp",
-          order: 2,
+          id: 3,
+          src: "/projects/003-beyond-coffee.webp",
+          order: 3,
           caption: "beyond coffee",
           location: "北京, 中国",
           projectName: "beyond-coffee",
         },
         {
-          id: 3,
-          src: "/projects/house-mk.webp",
-          order: 3,
+          id: 2,
+          src: "/projects/002-house-mk.webp",
+          order: 4,
           caption: "House MK - ",
           captionCN: "胡同房子的改造",
           location: "北京, 中国",
           projectName: "house-mk",
         },
         {
-          id: 4,
-          src: "/projects/fanglang.webp",
-          order: 4,
+          id: 1,
+          src: "/projects/001-fanglang.webp",
+          order: 5,
           caption: "FANGLANG - ",
           captionCN: "胡同社区酒吧改造",
           location: "北京, 中国",

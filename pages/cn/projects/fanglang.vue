@@ -58,14 +58,14 @@
         </div>
         <hr />
         <div class="project_nav">
-          <NuxtLink to="/cn/projects/house-mk" class="arrow_left"
+          <NuxtLink
+            to="/cn/projects/anglang"
+            class="arrow_left"
+            style="opacity: 0.3"
             ><ArrowL
           /></NuxtLink>
           <p>项目</p>
-          <NuxtLink
-            to="/cn/projects/fanglang"
-            class="arrow_right"
-            style="opacity: 0.3"
+          <NuxtLink to="/cn/projects/house-mk" class="arrow_right"
             ><ArrowR
           /></NuxtLink>
         </div>
@@ -86,7 +86,13 @@ import Footer from "@/components/cn/Footer.vue";
 import Fixed from "@/components/Fixed.vue";
 import ArrowL from "@/components/Icon/arrowL.vue";
 import ArrowR from "@/components/Icon/arrowR.vue";
+
 export default {
+  head() {
+    return {
+      title: "FANGLANG | mk-a",
+    };
+  },
   components: {
     HeaderDesktop,
     HeaderMobile,
