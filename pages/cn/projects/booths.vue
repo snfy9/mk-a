@@ -124,6 +124,9 @@ export default {
         { src: "/projects/booths/booths_17.webp" },
         { src: "/projects/booths/booths_18.webp" },
         { src: "/projects/booths/booths_19.webp" },
+        { src: "/projects/booths/booths_20.webp" },
+        { src: "/projects/booths/booths_21.webp" },
+        { src: "/projects/booths/booths_22.webp" },
       ],
     };
   },
