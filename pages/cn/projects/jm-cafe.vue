@@ -53,7 +53,7 @@
           </div>
           <div class="list_item" style="padding-bottom: 0">
             <p class="heading">摄影师</p>
-            <p class="content"><span>张哲鹏</span></p>
+            <p class="content"><span>张哲鹏，秦维</span></p>
           </div>
         </div>
         <hr />

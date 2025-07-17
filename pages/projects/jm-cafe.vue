@@ -53,7 +53,7 @@
           </div>
           <div class="list_item" style="padding-bottom: 0">
             <p class="heading">Photography Credit</p>
-            <p class="content">Zhe peng Zhang</p>
+            <p class="content">Zhe peng Zhang, Wei Qin</p>
           </div>
         </div>
         <hr />
@@ -123,6 +123,7 @@ export default {
         { src: "/projects/jm-cafe/jm-cafe_14.webp" },
         { src: "/projects/jm-cafe/jm-cafe_15.webp" },
         { src: "/projects/jm-cafe/jm-cafe_16.webp" },
+        { src: "/projects/jm-cafe/jm-cafe_17.webp" },
       ],
     };
   },

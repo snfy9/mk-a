@@ -4,7 +4,7 @@
       <div class="emptySpace"></div>
       <div class="about_container">
         <div class="image-container">
-          <img src="/about.webp" alt="Profile Image" />
+          <img src="/profiel_ver2.webp" alt="Profile Image" />
         </div>
         <div class="text-container">
           <div class="name-container">
@@ -58,7 +58,7 @@ import Footer from "@/components/Footer.vue";
 import Fixed from "@/components/Fixed.vue";
 
 export default {
-              head() {
+  head() {
     return {
       title: "About | mk-a",
     };
