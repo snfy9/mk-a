@@ -4,7 +4,7 @@
       <div class="emptySpace"></div>
       <div class="project_container">
         <div class="title_container">
-          <p class="caption">JM Cafe+ in Dongsi</p>
+          <p class="caption">JM Cafe・Bakery [Da Ji Xiang]</p>
           <p class="location">北京，中国</p>
         </div>
         <div class="project">
@@ -21,7 +21,7 @@
         <div class="project_info">
           <div class="list_item">
             <p class="heading">项目名称</p>
-            <p class="content">JM Cafe+ in Dongsi</p>
+            <p class="content">JM Cafe・Bakery <span>[大吉巷店]</span></p>
           </div>
           <div class="list_item">
             <p class="heading">项目类型</p>
@@ -37,23 +37,23 @@
           </div>
           <div class="list_item">
             <p class="heading">用地面积</p>
-            <p class="content">60<span>㎡</span></p>
+            <p class="content">188<span>㎡</span></p>
           </div>
           <div class="list_item">
             <p class="heading">建筑面积</p>
-            <p class="content">110<span>㎡</span></p>
+            <p class="content">188<span>㎡</span></p>
           </div>
           <div class="list_item">
             <p class="heading">设计周期</p>
-            <p class="content">2024.9 - 2024.11</p>
+            <p class="content">2025.5 - 2025.8</p>
           </div>
           <div class="list_item">
             <p class="heading">施工周期</p>
-            <p class="content">2024.11 - 2025.1</p>
+            <p class="content">2025.8 - 2025.10</p>
           </div>
           <div class="list_item" style="padding-bottom: 0">
             <p class="heading">摄影师</p>
-            <p class="content"><span>张哲鹏，秦维</span></p>
+            <p class="content"><span>张哲鹏</span></p>
           </div>
         </div>
         <hr />
@@ -102,7 +102,7 @@ import { getAdjacentProjects } from "@/utils/cnProjectOrder";
 export default {
   head() {
     return {
-      title: "JM Cafe+ in Dongsi | mk-a",
+      title: "JM Cafe・Bakery [大吉巷店] | mk-a",
     };
   },
   components: {
@@ -117,28 +117,33 @@ export default {
   transition: "fade",
 
   data() {
-    const { prev, next } = getAdjacentProjects("jm-cafe");
+    const { prev, next } = getAdjacentProjects("jm-bakery");
     return {
       isDesktop: false,
       prevProject: prev,
       nextProject: next,
       images: [
-        { src: "/projects/jm-cafe/jm-cafe_01.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_02.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_03.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_04.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_05.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_06.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_07.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_08.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_09.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_10.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_11.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_12.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_13.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_14.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_15.webp" },
-        { src: "/projects/jm-cafe/jm-cafe_16.webp" },
+        {
+          src: "/projects/jm-bakery/jm-bakery_01.webp",
+        },
+        {
+          src: "/projects/jm-bakery/jm-bakery_02.webp",
+        },
+        {
+          src: "/projects/jm-bakery/jm-bakery_03.webp",
+        },
+        {
+          src: "/projects/jm-bakery/jm-bakery_04.webp",
+        },
+        {
+          src: "/projects/jm-bakery/jm-bakery_05.webp",
+        },
+        {
+          src: "/projects/jm-bakery/jm-bakery_06.webp",
+        },
+        {
+          src: "/projects/jm-bakery/jm-bakery_07.webp",
+        },
       ],
     };
   },

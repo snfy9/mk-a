@@ -58,11 +58,25 @@
         </div>
         <hr />
         <div class="project_nav">
-          <NuxtLink to="/cn/projects/house-mk" class="arrow_left"
+          <NuxtLink
+            :to="nextProject ? `/cn/projects/${nextProject}` : '#'"
+            class="arrow_left"
+            :style="{
+              opacity: nextProject ? 1 : 0.3,
+              pointerEvents: nextProject ? 'auto' : 'none',
+              cursor: nextProject ? 'pointer' : 'not-allowed',
+            }"
             ><ArrowL
           /></NuxtLink>
           <p>项目</p>
-          <NuxtLink to="/cn/projects/booths" class="arrow_right"
+          <NuxtLink
+            :to="prevProject ? `/cn/projects/${prevProject}` : '#'"
+            class="arrow_right"
+            :style="{
+              opacity: prevProject ? 1 : 0.3,
+              pointerEvents: prevProject ? 'auto' : 'none',
+              cursor: prevProject ? 'pointer' : 'not-allowed',
+            }"
             ><ArrowR
           /></NuxtLink>
         </div>
@@ -83,6 +97,7 @@ import Footer from "@/components/cn/Footer.vue";
 import Fixed from "@/components/Fixed.vue";
 import ArrowL from "@/components/Icon/arrowL.vue";
 import ArrowR from "@/components/Icon/arrowR.vue";
+import { getAdjacentProjects } from "@/utils/cnProjectOrder";
 
 export default {
   head() {
@@ -101,8 +116,11 @@ export default {
   transition: "fade",
 
   data() {
+    const { prev, next } = getAdjacentProjects("beyond-coffee");
     return {
       isDesktop: false,
+      prevProject: prev,
+      nextProject: next,
       images: [
         { src: "/projects/beyond-coffee/beyond-coffee_01.webp" },
         { src: "/projects/beyond-coffee/beyond-coffee_02.webp" },
@@ -180,7 +198,7 @@ export default {
 @media (min-width: 768px) {
   .caption span {
     font-size: 16px;
-    padding-left: 6px;
+    padding-left: 4px;
   }
   .list_item {
     grid-template-columns: 48px 1fr;

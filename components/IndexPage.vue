@@ -60,6 +60,22 @@ export default {
       isDesktop: false,
       items: [
         {
+          id: 7,
+          src: "/projects/007-jm-bakery.webp",
+          order: 1,
+          caption: "JM Cafe・Bakery [Da Ji Xiang]",
+          location: "BEIJING,CHINA",
+          projectName: "jm-bakery",
+        },
+        {
+          id: 6,
+          src: "/projects/006-sy-apartment-renovation.webp",
+          order: 1,
+          caption: "SY Apartment Renovation",
+          location: "BEIJING,CHINA",
+          projectName: "sy-apartment-renovation",
+        },
+        {
           id: 5,
           src: "/projects/005-jm-cafe.webp",
           order: 1,

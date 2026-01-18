@@ -58,9 +58,27 @@ export default {
       isDesktop: false,
       items: [
         {
+          id: 7,
+          src: "/projects/007-jm-bakery.webp",
+          order: 1,
+          caption: "JM Cafe・Bakery ",
+          captionCN: "[大吉巷店]",
+          location: "北京, 中国",
+          projectName: "jm-bakery",
+        },
+        {
+          id: 6,
+          src: "/projects/006-sy-apartment-renovation.webp",
+          order: 2,
+          caption: "SY ",
+          captionCN: "公寓改造",
+          location: "北京, 中国",
+          projectName: "sy-apartment-renovation",
+        },
+        {
           id: 5,
           src: "/projects/005-jm-cafe.webp",
-          order: 1,
+          order: 3,
           caption: "JM Cafe+ in Dongsi",
           location: "北京, 中国",
           projectName: "jm-cafe",
@@ -68,7 +86,7 @@ export default {
         {
           id: 4,
           src: "/projects/004-booths.webp",
-          order: 2,
+          order: 4,
           caption: "Booth’s Cake shop in Dongsi",
           location: "北京, 中国",
           projectName: "booths",
@@ -76,7 +94,7 @@ export default {
         {
           id: 3,
           src: "/projects/003-beyond-coffee.webp",
-          order: 3,
+          order: 5,
           caption: "beyond coffee",
           location: "北京, 中国",
           projectName: "beyond-coffee",
@@ -84,7 +102,7 @@ export default {
         {
           id: 2,
           src: "/projects/002-house-mk.webp",
-          order: 4,
+          order: 6,
           caption: "House MK - ",
           captionCN: "胡同房子的改造",
           location: "北京, 中国",
@@ -93,7 +111,7 @@ export default {
         {
           id: 1,
           src: "/projects/001-fanglang.webp",
-          order: 5,
+          order: 7,
           caption: "FANGLANG - ",
           captionCN: "胡同社区酒吧改造",
           location: "北京, 中国",
