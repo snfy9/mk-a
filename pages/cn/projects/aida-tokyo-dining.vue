@@ -117,7 +117,7 @@ export default {
   transition: "fade",
 
   data() {
-    const { prev, next } = getAdjacentProjects("sy-apartment-renovation");
+    const { prev, next } = getAdjacentProjects("aida-tokyo-dining");
     return {
       isDesktop: false,
       prevProject: prev,

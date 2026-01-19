@@ -1,5 +1,6 @@
-// CN版プロジェクトの順序を定義（ID順の降順: 7→6→5→4→3→2→1）
+
 export const cnProjectOrder = [
+  'aida-tokyo-dining',
   'jm-bakery',
   'sy-apartment-renovation',
   'jm-cafe',
@@ -16,11 +17,11 @@ export const cnProjectOrder = [
  */
 export function getAdjacentProjects(currentProjectName) {
   const currentIndex = cnProjectOrder.indexOf(currentProjectName);
-  
+
   if (currentIndex === -1) {
     return { prev: null, next: null };
   }
-  
+
   return {
     prev: currentIndex > 0 ? cnProjectOrder[currentIndex - 1] : null,
     next: currentIndex < cnProjectOrder.length - 1 ? cnProjectOrder[currentIndex + 1] : null,
