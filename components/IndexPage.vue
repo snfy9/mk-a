@@ -60,9 +60,17 @@ export default {
       isDesktop: false,
       items: [
         {
+          id: 8,
+          src: "/projects/008-aida-tokyo-dining.webp",
+          order: 1,
+          caption: "AIDA Tokyo Dining",
+          location: "BEIJING,CHINA",
+          projectName: "aida-tokyo-dining",
+        },
+        {
           id: 7,
           src: "/projects/007-jm-bakery.webp",
-          order: 1,
+          order: 2,
           caption: "JM Cafe・Bakery [Da Ji Xiang]",
           location: "BEIJING,CHINA",
           projectName: "jm-bakery",
@@ -70,7 +78,7 @@ export default {
         {
           id: 6,
           src: "/projects/006-sy-apartment-renovation.webp",
-          order: 1,
+          order: 3,
           caption: "SY Apartment Renovation",
           location: "BEIJING,CHINA",
           projectName: "sy-apartment-renovation",
@@ -78,7 +86,7 @@ export default {
         {
           id: 5,
           src: "/projects/005-jm-cafe.webp",
-          order: 1,
+          order: 4,
           caption: "JM Cafe+ in Dongsi",
           location: "BEIJING,CHINA",
           projectName: "jm-cafe",
@@ -86,7 +94,7 @@ export default {
         {
           id: 4,
           src: "/projects/004-booths.webp",
-          order: 2,
+          order: 5,
           caption: "Booth’s Cake shop in Dongsi",
           location: "BEIJING,CHINA",
           projectName: "booths",
@@ -94,7 +102,7 @@ export default {
         {
           id: 3,
           src: "/projects/003-beyond-coffee.webp",
-          order: 3,
+          order: 6,
           caption: "beyond coffee",
           location: "BEIJING, CHINA",
           projectName: "beyond-coffee",
@@ -102,7 +110,7 @@ export default {
         {
           id: 2,
           src: "/projects/002-house-mk.webp",
-          order: 4,
+          order: 7,
           caption: "House MK - Hutong House Renovation",
           location: "BEIJING, CHINA",
           projectName: "house-mk",
@@ -110,7 +118,7 @@ export default {
         {
           id: 1,
           src: "/projects/001-fanglang.webp",
-          order: 5,
+          order: 8,
           caption: "FANGLANG - Hutong Community Bar Renovation",
           location: "BEIJING,CHINA",
           projectName: "fanglang",
