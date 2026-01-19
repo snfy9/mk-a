@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "scripts": {
     "dev": "nuxt",
@@ -22,7 +22,6 @@
   },
   "devDependencies": {
     "@nuxt/image": "^1.4.0",
-    "@nuxtjs/google-fonts": "^3.0.2",
-    "node-sass": "^9.0.0"
+    "@nuxtjs/google-fonts": "^3.0.2"
   }
 }
